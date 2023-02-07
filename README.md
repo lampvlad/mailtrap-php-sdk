@@ -1,10 +1,10 @@
-# Very short description of the package
+# Mailtrap.io PHP SDK
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/lampvlad/mailtrap-sdk.svg?style=flat-square)](https://packagist.org/packages/lampvlad/mailtrap-sdk)
 [![Total Downloads](https://img.shields.io/packagist/dt/lampvlad/mailtrap-sdk.svg?style=flat-square)](https://packagist.org/packages/lampvlad/mailtrap-sdk)
 ![GitHub Actions](https://github.com/lampvlad/mailtrap-sdk/actions/workflows/main.yml/badge.svg)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+Extendable object with a method that will send an email using the Mailtrap Email Sending API https://api-docs.mailtrap.io/docs/mailtrap-api-docs/. The send() method should be able to receive a number of parameters, some of them optional.
 
 ## Installation
 
@@ -46,7 +46,3 @@ If you discover any security related issues, please email slavalampdev@googlemai
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-## PHP Package Boilerplate
-
-This package was generated using the [PHP Package Boilerplate](https://laravelpackageboilerplate.com) by [Beyond Code](http://beyondco.de/).
