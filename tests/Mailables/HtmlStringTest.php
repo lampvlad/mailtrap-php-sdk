@@ -14,33 +14,33 @@ class HtmlStringTest extends \PHPUnit\Framework\TestCase
     {
         $htmlstring = new HtmlString('<div>This is a test</div>');
         $this->assertInstanceOf(HtmlString::class, $htmlstring);
-        $this->assertEquals('<div>This is a test</div>', $htmlstring->tohtml());
+        $this->assertEquals('<div>This is a test</div>', $htmlstring->toHtml());
     }
 
     /** @test */
     public function testIsEmpty()
     {
         $emptyhtmlstring = new HtmlString('');
-        $this->assertTrue($emptyhtmlstring->isempty());
+        $this->assertTrue($emptyhtmlstring->isEmpty());
 
         $nonemptyhtmlstring = new HtmlString('<div>This is a test</div>');
-        $this->assertFalse($nonemptyhtmlstring->isempty());
+        $this->assertFalse($nonemptyhtmlstring->isEmpty());
     }
 
     /** @test */
     public function testIsNotEmpty()
     {
         $emptyhtmlstring = new HtmlString('');
-        $this->assertFalse($emptyhtmlstring->isnotempty());
+        $this->assertFalse($emptyhtmlstring->isNotEmpty());
 
         $nonemptyhtmlstring = new HtmlString('<div>This is a test</div>');
-        $this->assertTrue($nonemptyhtmlstring->isnotempty());
+        $this->assertTrue($nonemptyhtmlstring->isNotEmpty());
     }
 
     /** @test */
     public function testToString()
     {
         $htmlstring = new HtmlString('<div>This is a test</div>');
-        $this->assertEquals('<div>This is a test</div>', $htmlstring->__tostring());
+        $this->assertEquals('<div>This is a test</div>', $htmlstring->__toString());
     }
 }
