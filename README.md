@@ -1,6 +1,6 @@
 # Mailtrap.io PHP SDK
 
-![GitHub Actions](https://github.com/lampvlad/mailtrap-sdk/actions/workflows/main.yml/badge.svg)
+![GitHub Actions](https://github.com/lampvlad/mailtrap-php-sdk/actions/workflows/main.yml/badge.svg)
 
 Extendable object with a method that will send an email using the Mailtrap Email Sending API https://api-docs.mailtrap.io/docs/mailtrap-api-docs/. The send() method should be able to receive a number of parameters, some of them optional.
 
